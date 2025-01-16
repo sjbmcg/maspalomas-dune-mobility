@@ -1,0 +1,17 @@
+requests
+pandas
+numpy
+matplotlib
+seaborn
+pygame
+rasterio
+osmnx
+geopandas
+geemap
+earthengine-api
+scipy
+statsmodels
+scikit-learn
+pyproj
+matplotlib-scalebar
+shapely

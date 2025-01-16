@@ -1,7 +1,18 @@
 {
-    "API_KEY": "7803afef72aeed3316b4bc9b245d3992",
-    "lat": 27.7606,
-    "lon": 15.5860,
-    "start_date": "2020-01-01",
-    "end_date": "2021-12-31"
+    
+    "WIND_CONFIG": [
+    {"API_KEY": "7803afef72aeed3316b4bc9b245d3992"},
+    {"lat": 27.7606},
+    {"lon": 15.5860},
+    {"URL": "https://archive-api.open-meteo.com/v1/archive"},
+    {"start_date": "2020-01-01"},
+    {"end_date": "2021-01-01"},
+    {"CSV_FILENAME": "data/maspalomas_climate_data/weather_data_2020_2021.csv"}
+    ],
+
+    "MASPOLOMAS_DEM":[
+    {"DEM_PATH": "136_MDT25_GC.tif"},
+    {"aoi_lonlat": [-15.600, 27.730, -15.570, 27.750]}, 
+    {"EPSG_UTM28N": "EPSG:32628"}
+    ]
 }
