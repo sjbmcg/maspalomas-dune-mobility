@@ -1,0 +1,16 @@
+{
+  "request": {
+    "latitude": 27.7606,
+    "longitude": -15.586,
+    "start_date": "2020-01-01",
+    "end_date": "2021-12-31",
+    "hourly": "wind_speed_10m,wind_direction_10m,wind_gusts_10m,temperature_2m,precipitation",
+    "timezone": "auto"
+  },
+  "resolved_latitude": 27.803162,
+  "resolved_longitude": -15.590576,
+  "timezone": "Atlantic/Canary",
+  "timezone_abbreviation": "GMT+1",
+  "elevation": 30.0,
+  "rows": 17544
+}

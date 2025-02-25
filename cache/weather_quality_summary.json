@@ -1,0 +1,8 @@
+{
+  "rows": 17544,
+  "zero_wind_rows": 8,
+  "gust_rows_adjusted": 31,
+  "remaining_gust_violations": 0,
+  "date_min": "2020-01-01 00:00:00",
+  "date_max": "2021-12-31 23:00:00"
+}
