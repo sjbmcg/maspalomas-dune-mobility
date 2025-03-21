@@ -6,16 +6,16 @@ This repository combines exploratory remote-sensing analysis in a notebook with 
 
 The data folder contains:
 
-**DTM_MASPOLOMAS** - DEM elevation data  
+**DTM_MASPOLOMAS** - DEM elevation rasters for terrain context  
 **maspalomas_simulation_config** - Werner model initial conditions  
-**maspalomas_climate_data** - Open-Meteo hourly climate data for Maspalomas (2020-2021)
+**maspalomas_climate_data** - raw weather data, cleaned weather data, and provenance files
 
 ## Code
 
 **sand_dune_simulation.ipynb** - Complete analysis notebook  
 **brad_werner_sand_simulation.py** - Werner-style cellular automaton implementation with configurable CLI options  
-**utils.json** - Configuration parameters for climate download and DEM metadata  
-**requirements.txt** - Python package dependencies
+**analysis_config.json** - Central configuration for weather inputs, DEM paths, and simulation artifacts  
+**requirements.txt** - Minimal runtime dependencies
 
 ## Installation
 
@@ -39,6 +39,7 @@ The script reads `data/maspalomas_simulation_config/2020_continuous_topoIC.csv` 
 
 ## Reproducibility Notes
 
-- The weather CSV is derived from Open-Meteo using the coordinates in `utils.json`. If you re-run the download cells, the notebook should regenerate the same file path.
+- `analysis_config.json` is the single source of truth for weather paths, DEM paths, and the default Werner initial-condition file.
+- The weather folder contains four distinct artifacts: the raw Open-Meteo pull, the cleaned analysis file, request metadata, and a quality-summary JSON. Those files are intentionally kept together.
+- `requirements.txt` is the maintained install surface for the project. Local cache files and ad hoc environment dumps are intentionally not tracked.
 - The notebook is still an exploratory research document, so stored outputs may lag behind source edits until the notebook is re-executed.
-- `requirements.txt` is intentionally lightweight and currently unpinned, so exact package versions are not frozen in this repository.

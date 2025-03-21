@@ -1,0 +1,33 @@
+{
+  "weather": {
+    "provider": "open-meteo",
+    "archive_url": "https://archive-api.open-meteo.com/v1/archive",
+    "latitude": 27.7606,
+    "longitude": -15.5860,
+    "start_date": "2020-01-01",
+    "end_date": "2021-12-31",
+    "raw_csv_path": "data/maspalomas_climate_data/weather_data_2020_2021.csv",
+    "cleaned_csv_path": "data/maspalomas_climate_data/weather_data_2020_2021_cleaned.csv",
+    "metadata_path": "data/maspalomas_climate_data/weather_data_2020_2021_metadata.json",
+    "quality_summary_path": "data/maspalomas_climate_data/weather_data_2020_2021_quality_summary.json"
+  },
+  "dem": {
+    "directory": "data/DTM_MASPOLOMAS",
+    "default_dem_path": "data/DTM_MASPOLOMAS/2015_DEM_02.tif",
+    "available_dem_paths": [
+      "data/DTM_MASPOLOMAS/2015_DEM_02.tif",
+      "data/DTM_MASPOLOMAS/2018_DEM_25.tif",
+      "data/DTM_MASPOLOMAS/2020_DEM_25.tif"
+    ],
+    "aoi_lonlat": [
+      -15.6,
+      27.73,
+      -15.57,
+      27.75
+    ],
+    "projected_crs": "EPSG:32628"
+  },
+  "simulation": {
+    "initial_conditions_path": "data/maspalomas_simulation_config/2020_continuous_topoIC.csv"
+  }
+}
